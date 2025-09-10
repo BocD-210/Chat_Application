@@ -42,7 +42,7 @@ And then you can run the app with another port then you can communication.
 
 **Video demo of the project result** : [Google Driver Link](https://drive.google.com/file/d/1doIcjdHaZTqoYTeZRaZu9PbJDvzgueHc/view?usp=sharing) .
 
-![Diagram](Interface Chat App.png)
+![Diagram](Interface%20Chat%20App.png)
 
 When you run the app successful! The GUI of App will like this image and after the `>>`, let's choose a `CLI` to enjoy the app
 
@@ -53,6 +53,12 @@ Some command line interface in the app such as:
 - `terminate <connection ID>`: You need to know the connection ID you want to terminate, and then the connection between you and this will stop.
 - `send <connection ID> <message>` : Used to send message to the clients (You need to have the **connection ID** if you want to use this CLI).
 - `exit`: This CLI will terminate all the connection was connected, and then the application will end.
+
+**NOTE:** You need to clean the project when you end the chat app.
+
+```bash
+make clean
+```
 
 ## Workspace Structure.
 ```
@@ -72,3 +78,7 @@ Some command line interface in the app such as:
 │   └── socket.c
 └── valgrind-out.txt
 ```
+
+## Contact
+
+For issues or inquiries, open a GitHub issue or contact [bocdo210@gmail.com].

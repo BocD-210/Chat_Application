@@ -42,7 +42,7 @@ And then you can run the app with another port then you can communication.
 
 **Video demo of the project result** : [Google Driver Link](https://drive.google.com/file/d/1doIcjdHaZTqoYTeZRaZu9PbJDvzgueHc/view?usp=sharing) .
 
-![Diagram](Chat_App's interface.png)
+![Diagram](Interface Chat App.png)
 
 When you run the app successful! The GUI of App will like this image and after the `>>`, let's choose a `CLI` to enjoy the app
 

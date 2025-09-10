@@ -54,7 +54,19 @@ Some command line interface in the app such as:
 - `send <connection ID> <message>` : Used to send message to the clients (You need to have the **connection ID** if you want to use this CLI).
 - `exit`: This CLI will terminate all the connection was connected, and then the application will end.
 
-**NOTE:** You need to clean the project when you end the chat app.
+While you build and run the project, you can use the `Valgrind tool` to check the memory leak (I think **Memory Leak** is a big issues in the **Embedded Major**).
+This is the result when i check the memory leak by **Valgrind tool** in my project.
+
+```
+==14412== HEAP SUMMARY:
+==14412==     in use at exit: 0 bytes in 0 blocks
+==14412==   total heap usage: 10 allocs, 10 frees, 6,422 bytes allocated
+==14412== 
+==14412== All heap blocks were freed -- no leaks are possible
+==14412== 
+==14412== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+```
+**NOTE:** You need to clean the project when you end the chat app, advoid some problems related to such as memory overflow when you allocated.
 
 ```bash
 make clean

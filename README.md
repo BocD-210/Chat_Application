@@ -39,4 +39,7 @@ And then you can run the app with another port then you can communication.
 
 ### Illustrate about the chat application's interface.
 
+![Diagram](Chat_App's interface.png)
+
+When you run the app successful! The GUI of App will like this image
 

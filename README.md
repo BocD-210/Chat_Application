@@ -12,6 +12,7 @@ This is a mini project when i completed the **Linux Programming** course. The Ch
 - **Debugging and memory safety:** ensured through the use of `Valgrind tool` for detecting memory leaks.
 -  Implementation of **TCP sockets** and **inter-process communication (IPC)** for efficient message exchange.
 
+This will used the Multithreading to handle the multiple client connection, and have some command line interface , connection managerment to list active the connection and send messages and terminalted the connection
 ## Installation.
 
 ### 1. Clone the repository
@@ -37,9 +38,37 @@ Example:
 
 And then you can run the app with another port then you can communication.
 
-### Illustrate about the chat application's interface.
+## Illustrate about the chat application's interface.
+
+**Video demo of the project result** : [Google Driver Link](https://drive.google.com/file/d/1doIcjdHaZTqoYTeZRaZu9PbJDvzgueHc/view?usp=sharing) .
 
 ![Diagram](Chat_App's interface.png)
 
-When you run the app successful! The GUI of App will like this image
+When you run the app successful! The GUI of App will like this image and after the `>>`, let's choose a `CLI` to enjoy the app
 
+Some command line interface in the app such as: 
+- `help` and `myport`: It's will show manual and the port you chosen.
+- `connect <destination> <port>`: when you use this CLI, you need to know the destination you want to connect (The destination is the **IP Address** of the chat app run) and port is **Number Port** you chosen.
+- `list`: When you connect with client successfully, this client will allocated a **ID**, This ID very helpful for the connection manager. And this ID used to terminate the connection.
+- `terminate <connection ID>`: You need to know the connection ID you want to terminate, and then the connection between you and this will stop.
+- `send <connection ID> <message>` : Used to send message to the clients (You need to have the **connection ID** if you want to use this CLI).
+- `exit`: This CLI will terminate all the connection was connected, and then the application will end.
+
+## Workspace Structure.
+```
+.
+├── inc
+│   ├── command.h
+│   ├── connection.h
+│   ├── server.h
+│   ├── socket.h
+│   └── types.h
+├── Makefile
+├── src
+│   ├── command.c
+│   ├── connection.c
+│   ├── main.c
+│   ├── server.c
+│   └── socket.c
+└── valgrind-out.txt
+```
